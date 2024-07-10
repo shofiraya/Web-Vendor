@@ -7,13 +7,16 @@ Documentation
 5. php artisan serve
 
 Buat branch 
+
 6. git branch -M <nama_branch>
 7. git checkout <nama_branch>
 
 Buat dan pindah branch
+
 git checkout -b <nama_branch>
 
 Kirim (Push) dan update file
+
 8. git add .
 9. git commit -m "Isi bebas pesan commit"
 10. git push origin <nama_branch>
