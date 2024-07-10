@@ -12,6 +12,11 @@ class VendorCompController extends Controller
         return view('vendorcomp.dashboard');
     }
 
+    public function permintaan()
+    {
+        return view('vendorcomp.permintaan');
+    }
+
     public function negosiasi()
     {
         return view('vendorcomp.negosiasi');

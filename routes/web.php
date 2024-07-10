@@ -19,5 +19,6 @@ Route::get('/vendorcomp/dashboard', function () {
 
 // routes/web.php
 Route::get('/vendorcomp/dashboard', [VendorCompController::class, 'dashboard']);
+Route::get('/vendorcomp/permintaan', [VendorCompController::class, 'permintaan']);
 Route::get('/vendorcomp/negosiasi', [VendorCompController::class, 'negosiasi']);
 Route::get('/vendorcomp/riwayat', [VendorCompController::class, 'riwayat']);

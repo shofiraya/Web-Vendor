@@ -1,6 +1,7 @@
 <!-- resources/views/vendorcomp/dashboard.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,11 @@
     <title>VendorComp Dashboard</title>
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
+
 <body>
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
     <div class="navbar bg-neutral">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl text-white">LOGO</a>
+            <a href="{{ url('/vendorcomp/dashboard') }}" class="btn btn-ghost text-xl text-white">LOGO</a>
         </div>
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1">
@@ -26,7 +25,9 @@
                         <span class="badge badge-xs badge-error indicator-item"></span>
                     </div>
                 </button>
-                <li><a class="text-white text-xl">Vendor A</a></li>
+                <li class="relative">
+                    <a class="text-white text-xl">Vendor A</a>
+                </li>
                 <li>
                     <details>
                         <summary>
@@ -36,7 +37,7 @@
                             </svg>
                         </summary>
                         <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
-                            <li><a >Profile</a></li>
+                            <li><a>Profile</a></li>
                             <li><a>Logout</a></li>
                         </ul>
                     </details>
@@ -49,7 +50,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="{{ url('/vendorcomp/dashboard') }}" class="active">Permintaan Baru</a></li>
+            <li><a href="{{ url('/vendorcomp/permintaan') }}" class="text-black">Permintaan Baru</a></li>
             <li><a href="{{ url('/vendorcomp/negosiasi') }}" class="text-black">Negosiasi</a></li>
             <li><a href="{{ url('/vendorcomp/riwayat') }}" class="text-black">Riwayat</a></li>
         </ul>
@@ -70,4 +71,5 @@
         <p>VendorComp A</p>
     </footer>
 </body>
+
 </html>

@@ -1,6 +1,7 @@
 <!-- resources/views/vendorcomp/negosiasi.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <title>VendorComp Negosiasi</title>
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
+
 <body>
-<div class="navbar bg-neutral">
+    <div class="navbar bg-neutral">
         <div class="flex-1">
             <a href="{{ url('/vendorcomp/dashboard') }}" class="btn btn-ghost text-xl text-white">LOGO</a>
         </div>
@@ -33,7 +35,7 @@
                             </svg>
                         </summary>
                         <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
-                            <li><a >Profile</a></li>
+                            <li><a>Profile</a></li>
                             <li><a>Logout</a></li>
                         </ul>
                     </details>
@@ -41,23 +43,44 @@
             </ul>
         </div>
     </div>
-    <header>
-        <h1>Negosiasi</h1>
-    </header>
     <nav>
         <ul>
-            <li><a href="{{ url('/vendorcomp/permintaan') }}">Permintaan Baru</a></li>
-            <li><a href="{{ url('/vendorcomp/negosiasi') }}" class="active">Negosiasi</a></li>
+            <li><a href="{{ url('/vendorcomp/permintaan') }}" class="active">Permintaan Baru</a></li>
+            <li><a href="{{ url('/vendorcomp/negosiasi') }}">Negosiasi</a></li>
             <li><a href="{{ url('/vendorcomp/riwayat') }}">Riwayat</a></li>
         </ul>
     </nav>
     <main>
-        <section class="negotiation">
-            <!-- Tambahkan konten negosiasi di sini -->
+        <section class="permintaan">
+            <section class="request">
+                <div class="request-card">
+                    <h2 class="font-bold space-x-10">PT. INKA Multi Solusi</h2>
+                    <p>Perusahaan ABC sedang mencari vendor untuk menyediakan jasa pengiriman logistik untuk pengiriman bulan
+                        Agustus 2024. Proyek ini mencakup pengiriman barang dari pusat
+                        distribusi di Kota A ke pelanggan di wilayah B, C, dan D.
+                    </p>
+                    <p>
+                    <ul>Spesifikasi Kebutuhan:
+                        <li>Jumlah Pengiriman: 500 paket per bulan.</li>
+                        <li>Jenis Barang: Berbagai produk konsumen non-perishable.</li>
+                        <li>Waktu Pengiriman: Setiap hari kerja, dengan waktu yang telah ditentukan.</li>
+                        <li>Area Layanan: Wilayah B, C, dan D dengan titik pengiriman yang ditentukan.</li>
+                    </ul>
+                    </p>
+                    <p class="font-bold">
+                        Tenggat Waktu Pengajuan Penawaran: 15 Juli 2024
+                    </p>
+                    <div class="buttons ">
+                        <button class="btn btn-success">Unduh Surat Permintaan Penawaran Harga</button>
+                        <button class="btn btn-warning">Kembali</button>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
         <p>VendorComp A</p>
     </footer>
 </body>
+
 </html>

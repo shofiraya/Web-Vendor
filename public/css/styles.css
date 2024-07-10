@@ -5,8 +5,18 @@ body {
     padding: 0;
 }
 
+li::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    height: 60%;
+    width: 1px;
+    background-color: #EDEDED;
+    transform: translateY(-50%);
+}
+
 header {
-    /* background-color: #f2f2f2; */
     padding: 20px;
     text-align: center;
 }
@@ -46,6 +56,7 @@ nav ul li .active {
     color: red;
 }
 
+
 main {
     padding: 20px;
     /* background-color: #f9f9f9; */
@@ -71,6 +82,9 @@ main {
 
 .buttons {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .details-button {
