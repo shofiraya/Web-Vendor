@@ -1,0 +1,101 @@
+/* public/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul hr {
+    color: #000;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 131, 131);
+}
+
+nav ul li .active {
+    color: red;
+}
+
+main {
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+}
+
+.request, .negotiation, .history {
+    color: #000;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px 0;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+}
+
+.request-card {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.request-card h2 {
+    margin-top: 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.details-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.offer-button {
+    background-color: red;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
